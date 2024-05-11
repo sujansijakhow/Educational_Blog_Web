@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduExplorer DetailsPage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* uses Internal CSS */
+         a {
+        text-decoration: none;
+        color: #ecf0f1;;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        .detailPage-container{
+            margin-top: 120px;
+        }
+        p a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- uses for redirecting to homePage directly by clicking to web logo or name -->
+    <a href="homepage.html">
+        <h1><img src="multimedia/logo.png" alt="">EduExplorer</h1>
+        
+    </a>
+   <nav>
+    <div class="input-line">
+
+        
+        <input type="text" id="num" placeholder="Search..">
+           <img src="multimedia/search.png" class="search-icon"style="height: 14px; width: 15px;" alt="">
+        <ol>
+            <!-- Direct to the particular pages as named in heading -->
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="bloglist.html">BlogList</a></li>
+            <li><a href="#" class="active">BlogDetails</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ol>
+    </div>
+   </nav>   
+</header>
+<div class="detailPage-container">
+    <h3 style="margin-left: 20px;">Blogs_Details</h3>
+
+    <div class="details-container">
+        <article class="blog-post">
+            <h2>Gateway to EduKnowledge</h2>
+            <p class="date">Published on January 1, 2024</p>
+            <!-- content post by particular person -->
+            <!-- uses <sub> tag -->
+            <p>EWater, chemically represented as H<sub>2</sub>O, is the fundamental molecule for life on Earth. Its unique properties, such as high surface tension and ability to dissolve various substances, make it essential for biological processes and ecosystem sustainability. From quenching our thirst to facilitating intricate biochemical reactions, water is truly the elixir of life</p>
+            <p class="author">Written by John Doe</p>
+        </article>
+        <!-- shows the comments details who made the commment and so on-->
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-p">
+                <p><strong>Rohan</strong></p>
+                <p>Nice! Pleasure to Read</p>
+            </div>
+            <div class="comment-p">
+                <p><strong>Dang</strong></p>
+                <p>There is nothing easy. Education is Important</p>
+            </div>
+            
+        </section>
+    </div>
+    <div class="details-container">
+        <article class="blog-post">
+            <h2>MindMeld, Unlocking the Power of Learning</h2>
+            <p class="date">Published on January 11, 2024</p>
+            <p>Welcome to MindMeld, where learning is an adventure! Embark on a journey of discovery with us as we delve into the fascinating world of education. From practical tips to thought-provoking insights, we're here to inspire and empower you to reach your full potential. Let's embark on this transformative journey together.</p>
+            <p class="author">Written by Riyan Shrestha</p>
+        </article>
+    
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-p">
+                <p><strong>Aayush</strong></p>
+                <p>Impressed!</p>
+            </div>
+            <div class="comment-p">
+                <p><strong>Saphal</strong></p>
+                <p>Let's go, learning is a power</p>
+            </div>
+            
+        </section>
+    </div>
+    <div class="details-container">
+        <article class="blog-post">
+            <h2>Nurturing Minds, Inspiring Futures</h2>
+            <p class="date">Published On January 22, 2024
+            </p>
+            <!-- uses<sup> tag -->
+                <p>Pythagoras' theorem, a fundamental concept in gt in a right-angled triangle, the length of the hypotenuse (the side opposite the right angle) sum of the squares of the lengths of the other two sides. This theorem, expressed as h<sup>2</sup> =p<sup>2</sup> + b<sup>2</sup>, finds widespread application in various fields inengineering </p>
+            <p class="author">Written by Mark Tanom</p>
+        </article>
+    
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-p">
+                <p><strong>Serem</strong></p>
+                <p>Key for success future</p>
+            </div>
+            <div class="comment-p">
+                <p><strong>Zota</strong></p>
+                <p>Big things start from small beginnning!</p>
+            </div>
+        </section>
+</div>
+        
+    <div class="details-container">
+        <article class="blog-post">
+            <h2>Education and Gender</h2>
+            <p class="date">Published On January 28, 2024
+            </p>
+            <!-- uses<sup> tag -->
+               <p>As from the past, gender is very associated when the topic came about the education the conservative minded people are still doing the same thing that happens in ancient time where girls are said to back off or girls are comparatively lesses prioritized. So let's move on accept the change</p>
+            <p class="author">Written by Thomas Rosero</p>
+        </article>
+    
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-p">
+                <p><strong>Niten</strong></p>
+                <p>Yeah..these conservative people :(!</p>
+            </div>
+            <div class="comment-p">
+                <p><strong>Youta</strong></p>
+                <p>Things start to get changed</p>
+            </div>
+        </section>
+</div>
+        
+    <div class="details-container">
+        <article class="blog-post">
+            <h2>Poor System</h2>
+            <p class="date">Published On Feb 22, 2024
+            </p>
+            <!-- uses<sup> tag -->
+                <p>The Education system hit very bad to me as i remind the university in nepal as the working flow is very low as the result of 1<sup>st</sup> year finally got published when we reached end or 2<sup>nd</sup> year, hwich shows effect on my career as it shows we have gap which again create question mark</p>
+            <p class="author">Written by Anish lama</p>
+        </article>
+    
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-p">
+                <p><strong>Shyam</strong></p>
+                <p>Painful truth of the student living in the nepal</p>
+            </div>
+            <div class="comment-p">
+                <p><strong>Prashant</strong></p>
+                <p>Bitter truth!</p>
+            </div>
+        </section>
+</div>
+        
+</div>
+<!-- uses text link tag -->
+<p style="text-align: center;"><a href="https://educationaladvancement.org/blog/?gad_source=1&gclid=Cj0KCQjwk6SwBhDPARIsAJ59Gweixw_YSZ7f6mzo3tXJtnQ0YB9wg-jkzyXoW8ybg0LLyHmpd1__9pgaAhUEEALw_wcB"> click me</a>&nbsp;to read more educational blog</p>
+<footer>
+    <h1>
+        <img src="multimedia/logo.png">EduExplorer
+    </h1>
+    <!-- uses  copyright symbol -->
+    <div class="list"> <u>About Us</u>
+        <!-- using logo images instead of using exporting method from third party sources -->
+        <ol>
+            <li><img src="multimedia/fb.png" class="findus"></i><a href="#">fb_EduExplorer</a></li>
+            <li><img src="multimedia/x.png"  class="findus"></i><a href="#">X_EduExplorer</a></li>
+            <li><img src="multimedia/insta.png"  class="findus"></i><a href="#">ig_EduExplorer</a></li>
+        </ol>
+
+    </div>
+    <p>  Privacy Policy | Terms & Conditions | Disclaimer&copy; EduExplorer, All Right Reserved</p>
+   
+</footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduExplorer BlogList</title>
+  <link rel="stylesheet" href="styles.css">
+    
+</head>
+<style>
+    /* Uses Internal CSS */
+     a {
+        text-decoration: none;
+        color: #ecf0f1;;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    .blog-description{
+        font-size: 15px;
+    }
+    .blog-container{
+        width: 500px;
+        font-size: 18px;
+    }
+    .container {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    hr{
+        color: black;
+    }
+    .container{
+        margin-top: 30px;
+    }
+    .list-container{
+        display: flex;
+        justify-content: center;
+        margin: 0px 60px;
+        margin-bottom: 60px; 
+    }
+    .details-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+</style>
+<body>
+    <header>
+        <!-- uses for redirecting to homePage directly by clicking to web logo or name -->
+        <a href="homepage.html">
+            <h1><img src="multimedia/logo.png" alt="">EduExplorer</h1>
+        </a>
+        <nav>
+            <div class="input-line">
+
+                <!-- <h3>BlogList</h3> -->
+                <input type="text" id="num" placeholder="Search..">
+                 <img src="multimedia/search.png" class="search-icon"style="height: 14px; width: 15px;" alt="">
+                <ol>
+                    <!-- Direct to the particular pages as named in heading -->
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#" class="active">BlogList</a></li>
+                    <li><a href="Blogdetailpage.html">BlogDetails</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <h2 style="margin-top: 130px;">Popular Education Blogs</h2>
+    <div class="list-container">
+
+        <div class="container">
+    
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">NEP-Ed</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+                <div class="blog-description">
+                    <p>Nepal faces challenges in education quality, gender disparity, language barriers, socioeconomic inequality, but government initiatives and rebuilding efforts post-disasters aim for improvement. Moreover, there are other barriers too which leads to be a common problem called gender stereotype stereotyping. </p>
+        
+                </div>
+                <!-- shows the followers stablility of the particular person or org who posted the blog -->
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">56k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">4</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">suzu-Bg</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+                <div class="blog-description">
+                    <p>Virtual learning, remote education through online platforms. It offers flexibility, accessibility, and convenience, enabling learners to access resources and interact with instructors from anywhere. As these days various 3D gadgets type learning become so coomon and excitable.</p>
+        
+                </div>
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">106k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">3</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">RP-Ed</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+        
+        
+                <div class="blog-description">
+                    <p>Distractions in education, whether in traditional or virtual settings and many others today era's prblm, hinder learning. Common distractions include noise, technology, personal issues, and lack of focus. Through various types student can go in wrong way.</p>
+        
+                </div>
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">15k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">2</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">Sanjal-Ed</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+                <div class="blog-description">
+                    <p>Nepal faces significant challenges in ensuring universal access to education, particularly in remote and rural areas. Geographic terrain, inadequatefactors contribute to barriers preventing children from there is an unequal distribution of technology all over the world especially in the undeveloped part of every country.</p>
+        
+                </div>
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">156k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">2</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">DailyEd</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+                <div class="blog-description">
+                    <p>Despite efforts to expand access, the quality of education in Nepal remains a concern. Overcrowded classrooms, a shortage of qualified teachers, and outdated teaching methods  major reason is Brain Drain as an energetic and young student lead to foreign countries in the expectaition of his/her better future.</p>
+        
+                </div>
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">60k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">3</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="blog-container">
+                <div class="blogger-head">
+                    <span class="blogger-name">MyBlog</span>
+                    <p class="status"># most popular educaiton blog</p>
+                </div>
+                <div class="blog-description">
+                    <p>Gender disparity in education is another pressing issue in Nepal, with girls facing greater problem. Deep-rooted cultural norms, early marriage, and household responsibilities often limit girls' participation in education. The gender descrimination in consistent since past to till now as the result the illiteracy rate of women around the world is comparatively low.</p>
+        
+                </div>
+                <div class="blogger-stability">
+                    <div class="followers common">
+                        <span class="value">16k</span>
+                        <span class="title">followers</span>
+                    </div>
+                    <div class="articles common">
+                        <span class="value">2</span>
+                        <span class="title">Articles per week</span>
+                    </div>
+                    <div class="more common">
+                        <span class="value">Read</span>
+                        <span class="title">Relevance</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+   <hr style="margin-left: 30px;">
+
+    <div class="details-container">
+
+    <div class="details-containers">
+        <article class="blog-post">
+            <h2>Exploring the Depths of Creativity</h2>
+            <p class="date">Published on January 23, 2024</p>
+            <p>Step into the realm of boundless creativity with us! We invite you to dive deep into the oceans of imagination, where every wave carries the potential ricate currents of artistic expression together. Join us on this voyage of inspiration and unleash the full spectrum of your creative brilliance.</p>
+            <p class="author">
+                <!-- uses italic tag -->
+                <i>Written by Sodia Riever</i></p>
+        </article>
+        </div>
+
+    <div class="details-containers">
+        <article class="blog-post">
+            <h2>Unlocking the Power of Learning</h2>
+            <p class="date">Published on January 11, 2024</p>
+            <p>Welcome to MindMeld, where learning is an adventure! Embark on a journey of discovery with us as we delve into the fascinating world of education. From practical tips to thought-provoking insights, we're here to inspire and empower you to reach your full potential. Let's embark on this transformative journey together.</p>
+            <p class="author">
+                <i>Written by Riyan Shrestha</i> </p>
+        </article>
+        </div>
+
+        <div class="details-containers">
+            <article class="blog-post">
+                <h2>Unleashing Creative Potential</h2>
+                <p class="date">Published on feb 19, 2024</p>
+                <p>WEmbark on a journey into the depths of your creative mind! Join us as we navigate the unes of imaginationential within. From innovative ideas to artistic revelations, let's explore the boundless possibilities together. Embrace the call of creativity and set sail towards new horizons of inspiration.</p>
+                <p class="author">Written by Isabell Stone</p>
+            </article>
+
+            </div>
+        <div class="details-containers">
+            <article class="blog-post">
+                <h2>The Art of Innovation</h2>
+                <p class="date">Published on January 23, 2024</p>
+                <p>Explore the art of innovation and creativity with us! Join our expedition into the uncharted territories of imagination, where every stroke of genius brings forth new discoveries. Together, oratione embark on this exhilarating journey of innovation and ingenuity..</p>
+                <p class="author">Written by Asher Lama</p>
+            </article>
+            </div>
+        <div class="details-containers">
+            <article class="blog-post">
+                <h2>Importance of Creativity</h2>
+                <p class="date">Published on January 28, 2024</p>
+                <p>As these days the introuduction of different AI tool and other's resources the innovation and creativity are gradually start to diminsh since people want  and have a significance question on the human themselves that human can compete with these tools in future?</p>
+                <p class="author">Written by Suyan Shrestha</p>
+            </article>
+            </div>  
+        <div class="details-containers">
+            <article class="blog-post">
+                <h2>The Revolution of Artificial Intelligence</h2>
+                <p class="date">Published on feb 1, 2024</p>
+                <p>The AI is making the General people life or work life in danger as day by day it in increasing its level and matching or even more make a revoultionized circumstance since it can make code quickly and can think logically as well challenging human intelligence</p>
+                <p class="author">Written by Niresh Lama</p>
+            </article>
+            </div>
+    </div>
+        
+    </div>
+    <footer>
+        <h1>
+            <img src="multimedia/logo.png">EduExplorer
+        </h1>
+        <!-- uses  copyright symbol -->
+        <div class="list"> <u>About Us</u>
+            <!-- using logo images instead of using exporting method from third party sources -->
+            <ol>
+                <li><img src="multimedia/fb.png" class="findus"></i><a href="#">fb_EduExplorer</a></li>
+                <li><img src="multimedia/x.png"  class="findus"></i><a href="#">X_EduExplorer</a></li>
+                <li><img src="multimedia/insta.png"  class="findus"></i><a href="#">ig_EduExplorer</a></li>
+            </ol>
+
+        </div>
+        <p>  Privacy Policy | Terms & Conditions | Disclaimer&copy; EduExplorer, All Right Reserved</p>
+    </footer>
+    
+</body>
+</html>

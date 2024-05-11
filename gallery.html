@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduExplorer GalleryPage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* uses Some Internal CSS which contain Style for ths file only*/
+        a {
+            text-decoration: none;
+            color: #ecf0f1;;
+        }
+        img {   
+            max-width: 100%;
+            height: 200px;
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+        } 
+        .heading{
+            margin-top: 130px;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <!-- uses for redirecting to homePage directly by clicking to web logo or name -->
+        <a href="homepage.html">
+            <h1><img src="multimedia/logo.png" alt="">EduExplorer</h1>
+        </a>
+        <nav>
+            <div class="input-line">
+               
+                <input type="text" id="num" placeholder="Search..">
+                <img src="multimedia/search.png" class="search-icon"style="height: 14px; width: 15px;" alt="">
+                <ol>
+                   <!-- Direct to the particular pages as named in heading -->
+                   <li><a href="homepage.html">Home</a></li>
+                   <li><a href="bloglist.html">BlogList</a></li>
+                   <li><a href="Blogdetailpage.html">BlogDetails</a></li>
+                   <li><a href="#" class="active"> Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+                    
+               
+
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="heading">
+            <!-- Gallery of images -->
+            
+            <h2>Image Section</h2>
+        </div>
+        <!-- uses  HTML 5 table structure and fig caption for diagrams labeling-->
+    <table>
+        <thead>
+            <tr>
+            <td colspan="3" style="font-weight: bold;">Image Gallery</td>
+            </tr>
+        </thead>
+        <tr>
+            <td><img src="multimedia/onlineeducation.avif" alt="Image 1">
+            <figcaption class="caption">Online Learning</figcaption></td>
+            <td><img src="multimedia/comments.png" alt="Image 2">
+            <figcaption class="caption">Comments</figcaption></td>
+            <td><img src="multimedia/contentwriting.avif" alt="Image 3">
+            <figcaption class="caption">Content Writing</figcaption></td>
+        </tr>
+        <tr>
+            <td><img src="multimedia/blog.png" alt="Image 1">
+            <figcaption class="caption">Blog</figcaption></td>
+            <td><img src="multimedia/computerlearning.avif" alt="Image 2">
+            <figcaption class="caption">Computing Learning</figcaption></td>
+            <td><img src="multimedia/onlineWriting.avif" alt="Image 3">
+            <figcaption class="caption">Online Writing</figcaption></td>
+        </tr>
+        
+    </table>
+    </section>
+    <section>
+        <h2>Video Section</h2>
+        <!-- video section using HTMl 5 table Structure with fig caption for labeling -->
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;">Video Gallery</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <figcaption class="caption">Getting Starting Blog</figcaption>
+                    <video width="600" height="360" controls>
+                    <source src="multimedia/startingBlog.mp4" type="video/mp4">
+                    </video>
+                </td>
+                <td>
+                    <figcaption class="caption">Getting Starting Blog</figcaption>
+                    <video width="600" height="360" controls>
+                    <source src="multimedia/edublogvideo.mp4" type="video/mp4">
+                    </video>
+                </td>
+               
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <h1>
+            <img src="multimedia/logo.png">EduExplorer
+        </h1>
+        <!-- uses  copyright symbol -->
+        <div class="list"> <u>About Us</u>
+            <!-- using logo images instead of using exporting method from third party sources -->
+            <ol>
+                <li><img src="multimedia/fb.png" class="findus"></i><a href="#">fb_EduExplorer</a></li>
+                <li><img src="multimedia/x.png"  class="findus"></i><a href="#">X_EduExplorer</a></li>
+                <li><img src="multimedia/insta.png"  class="findus"></i><a href="#">ig_EduExplorer</a></li>
+            </ol>
+
+        </div>
+        <p>  Privacy Policy | Terms & Conditions | Disclaimer&copy; EduExplorer, All Right Reserved</p>
+        
+    </footer>
+</body>
+</html>

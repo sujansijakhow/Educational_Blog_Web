@@ -1,0 +1,654 @@
+/*uses External styles for every file*/
+body {
+  /* uses for each pages */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* columns direction or vertical flex*/
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #1392e8, #99c606); /* uses mixture of two color */
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 1em;
+  height: 95px;
+  position: fixed; /* makes the nav bar postiion stick even after content scrolling */
+  top: 0;
+  width: 100%;
+}
+
+.input-line h3{
+  color: white;
+  transition: 300ms; /* set the time of hover transition */
+  cursor: pointer; /*makes the cursor symbol to pointer whenever mouse hover */
+}
+
+.input-line h3:hover{
+  color: #99c606; /* color changes after hover the mouse */
+}
+
+.input-line{
+  display: flex;
+  align-items: center;
+}
+
+/* accessing through id */
+#num{
+  height: 5px;
+  padding: 10px;
+  margin-left: 200px;
+  width: 300px;
+}
+
+.search-icon{
+  color: black;
+  padding: .5rem;
+  background-color: white;
+  border-bottom-right-radius: 5px; /* make the bottom right side little tilted */
+  border-top-right-radius: 5px; /* make each corner  little tilted */
+  transition: 300ms; /* set the time of hover transition */
+}
+
+.search-icon:hover{
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.1); /* Scale the image slightly on hover */
+}
+
+nav h3{
+  color: white;
+  transition: 300ms; /* set the time of hover transition */
+  cursor: pointer;
+}
+
+nav h3:hover{
+  color: #99c606;
+}
+
+nav ol {
+  list-style-type: none; /* make the list style to none */
+}
+
+nav ol li {
+  display: inline;
+  margin-right: 30px;
+  /* float: right; */
+}
+
+nav ol li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+nav ol li a:hover{
+  color: #aaaaaa;
+}
+
+section {
+  padding: 16px;
+}
+
+footer {
+  background-color: #2c3e50 ;
+  color: #ecf0f1;
+  padding: 16px;
+  text-align: center;
+  margin-top: auto;
+  font-size: 17px;
+ 
+}
+
+.list ol li a:hover{
+  color: rgb(1, 1, 12);
+  }
+
+ .list ol li{
+   margin-top: 10px;
+   list-style-type: none;
+   font-size: 14px;
+   display: inline;
+  }
+
+  header h1 {
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    transition: 800ms;
+    z-index: 2;
+    gap: 10px; /* set the time of hover transition */
+  }
+  
+  header h1:hover , footer h1:hover{
+      color: black; /* adding hover effect */
+  }
+  
+  header h1 img, footer h1 img {
+    height: 30px; 
+    width: auto; 
+    max-width: 100%; 
+    border-radius: 50%; /* make the image circle using 50% property */
+    margin-right: 5px;
+  }
+  
+  header h1 img {
+    vertical-align: middle; /* Centering the image vertically within the h1 element */
+  }
+  
+  header h1 img:hover, footer h1 img:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.1); /* Scale the image slightly on hover */
+  }
+
+footer p{
+  font-size: 12px;
+  color: #ddd;
+  margin-top: 50px;
+}
+.home-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin: 45px 0px;
+  gap: 30px;
+}
+.welcome-one{
+  height: 150px;
+  padding: 17px;
+  width: 700px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+}
+.welcome{
+  height: 150px;
+  padding: 17px;
+  width: 700px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+}
+.welcome:hover{
+  transform: scaleY(1.1);
+  z-index: 1    ;
+}
+.welcome button{
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 4px;
+  
+
+}
+.welcome button:hover{
+  transform: scaleY(1.1);
+}
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(green, yellow);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* accessing all type of form element at once */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+#add {
+  width: 470px;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+form button[type="submit"]:hover{
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.1); /* Scale the button slightly on hover */
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* uses grid property that divides one container equally two part in column direction */
+  grid-gap: 50px; /* providing some gap between containers */
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+
+}
+
+.blog-container {
+  width: 550px;
+  height: 200px;
+  padding: 16px;
+  background: transparent;
+  border-radius: 5px;
+  transition: 300ms;
+  display: flex;
+  
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0px 0px 10px black;
+}
+
+
+
+.blog-post{
+  height: auto;
+  padding: 20px;
+  
+}
+.input-line{
+  margin-top: 10px;
+}
+
+
+.blogger-head {
+  flex: 1;
+}
+
+.blogger-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.status {
+  color: #efeeee;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.blog-description {
+  font-size: 17px;
+  font-family: sans-serif;
+  flex: 1;
+}
+
+.blogger-stability {
+  flex: 1;
+}
+
+.blogger-stability {
+  display: flex; /* uses flex properties to make content goes horizontally */
+  flex: 1;
+}
+
+.common {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.title {
+  color: #f6f4f4;
+  font-size: 12px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 60px;
+  margin-bottom: 35px;
+  font-size: 12px;
+  /* height: auto; */
+}
+
+
+.blog-post {
+  /* margin-bottom: 20px; */
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  height: 230px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 10px black;
+  font-size: 15px;
+ 
+}
+
+.blog-post h2 {
+  color: #333;
+}
+
+.blog-post .author {
+  font-style: italic;
+  color: rgb(231, 229, 229); /* uses italic font-style */
+}
+
+.blog-post .date {
+  color: rgb(222, 218, 218);
+}
+
+.comment-p {
+  margin-top: 20px;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+.comment-p:hover{
+  transform: scaleY(1.1);
+}
+
+.comments h3 {
+  color: #333;
+}
+.comments p {
+  margin-bottom: 10px;
+  
+}
+.contact-me{
+  height: 465px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  background: linear-gradient(green, yellow);;
+  
+}
+.contact-me p{
+  margin-top: 5px;
+  font-weight: bold;
+}
+.contactus{
+  display: flex;
+  justify-content: center;
+  
+}
+.input-field{
+  margin-left: 40px;
+}
+.email-link{
+  text-decoration: underline;
+  color: blue;
+}
+.findus {
+  height: 10px; 
+  width: 10px;
+  border-radius: 50%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+.caption{
+  font-style: italic;
+  margin-top: 5px;
+}
+.active{
+  border-bottom: 1px solid white;
+}
+.why{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.why-containers{
+  height: 250px;
+  width: 300px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 4px black;
+  
+}
+.why-containers:hover{
+  transform: scaleY(1.1);
+  z-index: 1;
+}
+.topic{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: #333;
+}
+.btn{
+  height: 40px;
+  font-size: 17px;
+  background: purple;
+  border-radius: 10px;
+}
+.btn:hover{
+  opacity: 0.8;
+  transform: scaleY(1.1);
+}
+
+ /* Responsivenss navigation, below code are responisize on the behalf of IPHONE SE(320px) */
+@media only screen and (max-width: 320px) {
+  /* Adjustments for iPhone SE */
+
+  /* Adjust header styles */
+  header {
+    padding: 0.5em; /* Reduce padding */
+    height: auto; /* Allow height to adjust */
+  }
+
+  /* Adjust input field styles */
+  #num {
+    margin-left: 0; /* Remove margin */
+    width: 100%; /* Take foll width */
+  }
+
+  /* Adjust search icon styles */
+  .search-icon {
+    display: none; /* Hide search icon on small screens */
+  }
+
+  /* Adjust navigation styles */
+  nav ol li {
+    font-size: 10px;
+    display: block; /* Convert list items to block for stacking */
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: center; /* Center align text */
+    float: none; /* Remove float */
+    padding: 0px;
+  }
+  
+
+  header {
+      padding: 10px;
+      width: 500px;
+      height: auto;
+  }
+ 
+  header h1 {
+    font-size: 20px;
+  }
+  footer {
+      size: 20px;
+      padding: 0px;
+      width: 360px;
+      text-align: start;
+      margin: 0px;
+  
+  }
+  .list ol li{
+    display: block;
+   
+  }
+  header nav ol li {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust spacing between list items */
+  }
+  nav {
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+}
+
+  nav h3 {
+      display: block;
+  }
+
+  nav ol {
+      margin-left: 0;
+  }
+  nav ol li a{
+    font-size: 10px;
+  }
+
+  nav ol li {
+    font-size: 10px;
+      display: block;
+      margin: 5px 0;
+  }
+    .list ol li {
+      display: block; /* Change display to block for smaller screens */
+      margin-top: 5px; /* Adjust margin for smaller screens */
+  }
+  .list ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .list ol li {
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+
+    footer h1, img{
+    font-size: 20px;
+    }
+    footer p {
+      margin-top: 0px;
+    font-size: 10px
+    
+    }
+    nav .input-line ol{
+      margin-left: 0px;
+    }
+  nav .input-line ol li{
+    display: inline;
+  }
+  .input-line{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    float: left;
+    margin-left: 0px;
+  }
+
+  footer p{
+    float: left;
+  }
+  .container {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+    .details-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 100px
+      
+    }
+  .blog-post{
+    height: 300px;
+    width: 200px;
+   margin: 0px;
+   font-size: 12px;
+  }
+  .blog-container {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    height: 350px;
+    }
+
+  .blogger-head {
+     font-size: 16px;
+    }
+
+  .blog-description {
+     font-size: 14px;
+    }
+
+   .articles,
+   .followers,
+  .more {
+     font-size: 12px;
+    }
+
+ .input line input{
+  float: left;
+  text-align: start;
+  }
+  .input-line ol{
+    margin-left: 0px; 
+  }
+  table img{
+    height: 70px;
+    width: 70px;
+  }
+  video{
+    width: 100px;
+    height: 60px;
+  }
+  .why{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+  .why-containers{
+    height: 300px;
+    width: 200px;
+  }
+  }

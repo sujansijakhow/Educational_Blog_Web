@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduExplorer ContactPage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js">
+  </script>
+  <style>
+    /* Uses Internal CSS */
+    a {
+        text-decoration: none;
+        color: #ecf0f1;;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+  </style>
+</head>
+<body>
+    <header>
+        <!-- uses for redirecting to homePage directly by clicking to web logo or name -->
+        <a href="homepage.html">
+            <h1><img src="multimedia/logo.png" alt="">EduExplorer</h1>
+        </a>
+        <nav>
+            <div class="input-line">
+                
+                <input type="text" id="num" placeholder="Search..">
+                <img src="multimedia/search.png" class="search-icon"style="height: 14px; width: 15px;" alt="">
+                <ol>
+                   <!-- Direct to the particular pages as named in heading -->
+                   <li><a href="homepage.html">Home</a></li>
+                   <li><a href="bloglist.html">BlogList</a></li>
+                   <li><a href="Blogdetailpage.html">BlogDetails</a></li>
+                   <li><a href="gallery.html">Gallery</a></li>
+                   <li><a href="#" class="active">Contact</a></li>
+                </ol>
+            </nav>
+
+            </div>
+        </header>
+    
+
+        
+        
+        <h2 style="margin-top: 150px;">Contact Us</h2>
+        <section class="contactus">
+            <div class="contact-me">
+                <h1>Contact Details</h1>
+            <!-- uses email link tag -->
+            <p><a href="Mail to: eduexplorer@gmail.com" class="email-link">Send Email</a><br>01-4423232</p>
+            
+            <p style="font-weight: bold; font-size: 15px;">Bhaktapur<br>Pandubazar, H.No 1200</p>
+            
+            <p> <i>For social media:<br>You can find details below in footer</i></p>
+        </div>
+        
+        <div class="input-field">
+
+            <!-- uses required function to make mandatory to fill every form field -->
+            <p style="color: #ddd; font-weight: bold; text-align: center;">If you have any query or confusion please fill up the below down required information we will get to you afterwards </p>
+            <form action="#" method="post" id="contactForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your Fullname...." required><br>
+                <label for="address">Gender:</label>
+                <input type="radio" name="gender" id="male" required>Male
+                <input type="radio" name="gender" id="female" required style="margin-bottom: 20px;">Female<br>
+                <label for="Contact">Contact:</label>
+                <input type="number" id="contact" name="contzct" placeholder="Enter Your Contact number...." required><br>
+                <label for="address">Address:</label>
+                <!-- uses selection option to select address to make more user ease -->
+                <select name="address" id="add"> 
+                    <option>kathmandu</option>
+                    <option>Bhaktapur</option>
+                    <option>Pokhara</option>
+                    <option>Hetuada</option>
+                    <option>Lalitpur</option>
+                </select><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder ="Enter Your Email...."required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter the Message Here..." required></textarea><br>
+                <button type="submit" onclick="validation()">Submit</button>
+            </form>
+        </div>
+        </section>
+    <footer>
+        <h1>
+            <img src="multimedia/logo.png">EduExplorer
+        </h1>
+        <!-- uses  copyright symbol -->
+        <div class="list"> <u>About Us</u>
+            <!-- using logo images instead of using exporting method from third party sources -->
+            <ol>
+                <li><img src="multimedia/fb.png" class="findus"></i><a href="#">fb_EduExplorer</a></li>
+                <li><img src="multimedia/x.png"  class="findus"></i><a href="#">X_EduExplorer</a></li>
+                <li><img src="multimedia/insta.png"  class="findus"></i><a href="#">ig_EduExplorer</a></li>
+            </ol>
+
+       
+        <p>  Privacy Policy | Terms & Conditions | Disclaimer&copy; EduExplorer, All Right Reserved</p>
+    </footer>
+</body>
+</html>

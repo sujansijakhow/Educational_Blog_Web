@@ -342,11 +342,15 @@ form button[type="submit"]:hover{
   padding: 20px;
   height: 230px;
   margin-left: 20px;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 5px black;
   font-size: 15px;
  
 }
 
+.blog-post:hover {
+  box-shadow: 0px 0 10px black;
+  
+}
 .blog-post h2 {
   color: #333;
 }
